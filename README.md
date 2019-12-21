@@ -6,3 +6,15 @@ The purpose of this project is to showcase a basic example of using [Docker](htt
 
 ## Usage
 TODO
+
+## Useful Docker Commands
+
+[docker search](https://docs.docker.com/engine/reference/commandline/search/):
+```docker
+docker search [OPTIONS] <TERM e.g ubuntu>
+```
+
+[docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
+```docker
+docker cp <local file> <container name>:<container path>
+```
