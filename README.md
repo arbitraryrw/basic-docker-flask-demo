@@ -5,7 +5,7 @@ Nikola Cucakovic, December 2019
 The purpose of this project is to showcase a basic example of using [Docker](https://www.docker.com/) and [Flask](https://palletsprojects.com/p/flask/) together. This is purely for educational purposes as I find the best way to learn is by practically doing. I plan to enhance this in the future by integrating a container management tool such as [Kubernetes](https://kubernetes.io/) or [Docker Swarm](https://docs.docker.com/engine/swarm/).
 
 ## Basic Usage
-Without Docker Compose:
+Without Docker Compose in the `./web` dir:
 
 ```docker
 docker build -t basic-docker-flask-demo:latest .
@@ -42,6 +42,11 @@ docker ps -a
 Start a stopped docker container in bash/shell interactive mode: [docker start](https://docs.docker.com/engine/reference/commandline/start/)
 ```docker
 docker start -ai <container_name>
+```
+
+Get bash shell with running container: [dockor exec](https://docs.docker.com/engine/reference/commandline/exec/)
+```docker
+docker exec -it <container_name> /bin/bash
 ```
 
 Stop all containers: [docker container stop](https://docs.docker.com/engine/reference/commandline/stop/)
