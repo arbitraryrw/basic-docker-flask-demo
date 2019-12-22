@@ -15,8 +15,11 @@ docker run -d -p 5000:5000 basic-docker-flask-demo
 __With__ Docker compose in the project root dir run:
 
 ```
+docker-compose build
 docker-compose up
 ```
+
+Notably, to build without a cache run `docker-compose build --no-cache`.
 
 To verify the container is running:
 ```
