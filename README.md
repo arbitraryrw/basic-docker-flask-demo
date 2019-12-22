@@ -23,15 +23,39 @@ Run the basic Flask application with:
 env FLASK_APP=app.py flask run
 ```
 
+## Useful Docker Commands
 
-## Useful Commands
-
-[docker search](https://docs.docker.com/engine/reference/commandline/search/):
+Search for existing docker containers: [docker search](https://docs.docker.com/engine/reference/commandline/search/):
 ```docker
 docker search [OPTIONS] <TERM e.g ubuntu>
 ```
 
-[docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
+Run a docker container: [docker run](https://docs.docker.com/engine/reference/run/)
+```docker
+docker run -it <image e.g ubuntu:latest>
+```
+
+Copy files from host to docker container: [docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
 ```docker
 docker cp <local file> <container name>:<container path>
+```
+
+List docker containers: [docker ps / docker container](https://docs.docker.com/engine/reference/commandline/ps/)
+```docker
+docker ps -a
+```
+
+Start a stopped docker container in bash/shell interactive mode:[docker start](https://docs.docker.com/engine/reference/commandline/start/)
+```docker
+docker start -ai <container_name>
+```
+
+List docker images: [docker images](https://docs.docker.com/engine/reference/commandline/images/)
+```docker
+docker images -a
+```
+
+Remove unused images: [docker image prune](https://docs.docker.com/engine/reference/commandline/image_prune/)
+```docker
+docker image prune -a
 ```
