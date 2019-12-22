@@ -4,10 +4,27 @@ Nikola Cucakovic, December 2019
 ## Overview
 The purpose of this project is to showcase a basic example of using [Docker](https://www.docker.com/) and [Flask](https://palletsprojects.com/p/flask/) together. This is purely for educational purposes as I find the best way to learn is by practically doing. I plan to enhance this in the future by integrating a container management tool such as [Kubernetes](https://kubernetes.io/) or [Docker Swarm](https://docs.docker.com/engine/swarm/).
 
-## Usage
-TODO
+## Basic Flask Usage
+Make sure flask is installed by either running:
 
-## Useful Docker Commands
+```bash
+pip3 install -U flask
+```
+
+or get the version used in the sample by running:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Run the basic Flask application with:
+
+```bash
+env FLASK_APP=app.py flask run
+```
+
+
+## Useful Commands
 
 [docker search](https://docs.docker.com/engine/reference/commandline/search/):
 ```docker
