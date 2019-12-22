@@ -45,9 +45,19 @@ List docker containers: [docker ps / docker container](https://docs.docker.com/e
 docker ps -a
 ```
 
-Start a stopped docker container in bash/shell interactive mode:[docker start](https://docs.docker.com/engine/reference/commandline/start/)
+Start a stopped docker container in bash/shell interactive mode: [docker start](https://docs.docker.com/engine/reference/commandline/start/)
 ```docker
 docker start -ai <container_name>
+```
+
+Stop all containers: [docker container stop](https://docs.docker.com/engine/reference/commandline/stop/)
+```docker
+docker container stop $(docker container ls -aq)
+```
+
+Remove all containers: [docker container rm](https://docs.docker.com/engine/reference/commandline/container_rm/)
+```docker
+docker container rm $(docker container ls -aq)
 ```
 
 List docker images: [docker images](https://docs.docker.com/engine/reference/commandline/images/)
