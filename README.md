@@ -5,11 +5,17 @@ Nikola Cucakovic, December 2019
 The purpose of this project is to showcase a basic example of using [Docker](https://www.docker.com/) and [Flask](https://palletsprojects.com/p/flask/) together. This is purely for educational purposes as I find the best way to learn is by practically doing. I plan to enhance this in the future by integrating a container management tool such as [Kubernetes](https://kubernetes.io/) or [Docker Swarm](https://docs.docker.com/engine/swarm/).
 
 ## Basic Usage
-Without Docker Compose in the `./web` dir:
+__Without__ Docker Compose in the `./web` dir run:
 
 ```docker
 docker build -t basic-docker-flask-demo:latest .
 docker run -d -p 5000:5000 basic-docker-flask-demo
+```
+
+__With__ Docker compose in the project root dir run:
+
+```
+docker-compose up
 ```
 
 To verify the container is running:
