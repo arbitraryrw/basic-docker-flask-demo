@@ -3,4 +3,4 @@ web:
   ports:
    - "5000:5000"
   volumes:
-   - .:/app_code
+   - .:/src_code_not_needed_just_an_example
